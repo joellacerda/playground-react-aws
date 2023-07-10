@@ -20,6 +20,7 @@
   }
   ```
 - Create a file `turbo.json` to the root folder, with the following code:
+
   ```
   {
     "$schema": "https://turbo.build/schema.json",
@@ -45,4 +46,23 @@
       }
     }
   }
+  ```
+
+- Add the following lines to the `.gitignore` file:
+
+  ```
+  node_modules/
+  build/
+  .env
+  npm-debug.log*
+  yarn-debug.log*
+  yarn-error.log\*
+  ```
+
+- Create a `.env.example` file and add these lines:
+
+  ```
+  AWS_ACCESS_KEY_ID=your-access-key-id
+  AWS_SECRET_ACCESS_KEY=your-secret-access-key
+  REGION=us-east-1
   ```

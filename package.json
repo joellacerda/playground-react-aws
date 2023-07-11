@@ -1,8 +1,7 @@
 {
-  "name": "playground-react-aws",
-  "version": "0.0.1",
-  "author": "Joel Lacerda",
-  "packageManager": "yarn@3.6.1",
+  "name": "app",
+  "version": "0.0.0",
+  "private": true,
   "workspaces": {
     "packages": [
       "frontend",
@@ -11,5 +10,26 @@
     "nohoist": [
       "**"
     ]
-  }
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "sls:deploy": "turbo run sls:deploy",
+    "sls:remove": "turbo run sls:remove",
+    "sls:invoke": "turbo run sls:invoke --",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.0.0",
+    "eslint-config-custom": "*",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "packageManager": "yarn@1.22.18"
 }

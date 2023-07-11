@@ -1,6 +1,7 @@
 {
   "name": "playground-react-aws",
   "version": "0.0.1",
+  "author": "Joel Lacerda",
   "packageManager": "yarn@3.6.1",
   "workspaces": {
     "packages": [

@@ -5,12 +5,12 @@ import { Cat } from "../types";
 
 type Props = Cat;
 
-export const CatCard = ({ name, age, breed }: Props) => {
+export const CatCard = ({ name, age, breed, thumbnail }: Props) => {
   return (
     <div className="group overflow-hidden rounded-lg border border-gray-200 p-4 transition-all">
       <div
         style={{
-          "--bg-url": `url(https://assets.elanco.com/8e0bf1c2-1ae4-001f-9257-f2be3c683fb1/fca42f04-2474-4302-a238-990c8aebfe8c/Siamese_cat_1110x740.jpg)`,
+          "--bg-url": `url(${thumbnail?.url})`,
         }}
         className="relative mb-4 h-52 w-full rounded-lg border bg-[image:var(--bg-url)] bg-cover bg-center bg-no-repeat grayscale group-hover:grayscale-0"
       >

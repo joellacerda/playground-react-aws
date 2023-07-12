@@ -3,6 +3,10 @@ export type Cat = {
   name: string;
   age: string;
   breed: string;
+  thumbnail: {
+    key: string;
+    url: string;
+  };
 };
 
 export type Breed = {

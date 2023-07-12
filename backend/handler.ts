@@ -41,7 +41,7 @@ const output = (statusCode: number, body: Body): APIGatewayProxyResult => {
 };
 
 export const createCat = async (
-  event: APIGatewayProxyEvent
+  event: APIGatewayProxyEvent,
 ): Promise<APIGatewayProxyResult> => {
   try {
     const { name, breed, age } = JSON.parse(event.body || "{}");
@@ -82,7 +82,7 @@ export const listCats = async (): Promise<APIGatewayProxyResult> => {
     const response = await docClient.send(
       new ScanCommand({
         TableName: "Cats",
-      })
+      }),
     );
 
     return output(200, { data: response.Items });
@@ -94,7 +94,7 @@ export const listCats = async (): Promise<APIGatewayProxyResult> => {
 };
 
 export const showCat = async (
-  event: APIGatewayProxyEvent
+  event: APIGatewayProxyEvent,
 ): Promise<APIGatewayProxyResult> => {
   try {
     const { id } = event.pathParameters;
@@ -119,7 +119,7 @@ export const showCat = async (
 };
 
 export const editCat = async (
-  event: APIGatewayProxyEvent
+  event: APIGatewayProxyEvent,
 ): Promise<APIGatewayProxyResult> => {
   try {
     const { id } = event.pathParameters;
@@ -153,7 +153,7 @@ export const editCat = async (
 };
 
 export const deleteCat = async (
-  event: APIGatewayProxyEvent
+  event: APIGatewayProxyEvent,
 ): Promise<APIGatewayProxyResult> => {
   try {
     const { id } = event.pathParameters;
@@ -176,7 +176,7 @@ export const deleteCat = async (
 };
 
 export const uploadPhotos = async (
-  event: APIGatewayProxyEvent
+  event: APIGatewayProxyEvent,
 ): Promise<APIGatewayProxyResult> => {
   try {
     const body = await parse(event);
@@ -203,7 +203,7 @@ export const uploadPhotos = async (
         Metadata: {
           catId,
         },
-      })
+      }),
     );
 
     await docClient.send(
@@ -214,15 +214,17 @@ export const uploadPhotos = async (
         },
         UpdateExpression: "set thumbnail = :thumbnail",
         ExpressionAttributeValues: {
-          ":thumbnail": { url: "http://localhost:9000", key },
+          ":thumbnail": {
+            url: `https://${process.env.BUCKET_NAME}.s3.amazonaws.com/${key}`,
+            key,
+          },
         },
         ReturnValues: "ALL_NEW",
-      })
+      }),
     );
 
     return output(200, { data: "dsds" });
   } catch (err) {
-    console.log("ERRR", err);
     return output(400, { error: err.message });
   }
 };

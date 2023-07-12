@@ -169,14 +169,16 @@ export const uploadPhotos = (event) => __awaiter(void 0, void 0, void 0, functio
             },
             UpdateExpression: "set thumbnail = :thumbnail",
             ExpressionAttributeValues: {
-                ":thumbnail": { url: "http://localhost:9000", key },
+                ":thumbnail": {
+                    url: `https://${process.env.BUCKET_NAME}.s3.amazonaws.com/${key}`,
+                    key,
+                },
             },
             ReturnValues: "ALL_NEW",
         }));
         return output(200, { data: "dsds" });
     }
     catch (err) {
-        console.log("ERRR", err);
         return output(400, { error: err.message });
     }
 });

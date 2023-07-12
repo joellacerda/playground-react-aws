@@ -1,7 +1,7 @@
 import HeartIcon from "@heroicons/react/24/solid/HeartIcon";
 import HeartIconOutline from "@heroicons/react/24/outline/HeartIcon";
 
-export const PetCard = () => {
+export const CatCard = () => {
   return (
     <div className="group overflow-hidden rounded-lg border border-gray-200 p-4 transition-all">
       <div

@@ -32,7 +32,7 @@ export const BreedSelect = ({
           breed.name
             .toLowerCase()
             .replace(/\s+/g, "")
-            .includes(query.toLowerCase().replace(/\s+/g, ""))
+            .includes(query.toLowerCase().replace(/\s+/g, "")),
         );
 
   return (
@@ -46,7 +46,7 @@ export const BreedSelect = ({
               "text-red-600",
               "focus:border-red-500",
               "focus:ring-red-500",
-            ]
+            ],
           )}
         >
           <Combobox.Input
@@ -70,7 +70,7 @@ export const BreedSelect = ({
         >
           <Combobox.Options
             onBlur={onBlur}
-            className="absolute mt-1 max-h-72 w-full overflow-auto rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+            className="absolute mt-1 max-h-72 z-10 w-full overflow-auto rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
           >
             {filteredBreeds.length === 0 && query !== "" ? (
               <div className="relative cursor-default select-none px-4 py-2 text-gray-700">
@@ -90,7 +90,7 @@ export const BreedSelect = ({
                       <span
                         className={twMerge(
                           "block truncate",
-                          selected && "font-medium"
+                          selected && "font-medium",
                         )}
                       >
                         {breed.name}

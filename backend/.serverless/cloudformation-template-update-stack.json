@@ -188,8 +188,8 @@
                     "s3:PutBucketPolicy"
                   ],
                   "Resource": [
-                    "arn:aws:s3:::react-aws-uploads/*",
-                    "arn:aws:s3:::react-aws-uploads"
+                    "arn:aws:s3:::joellacerda-react-aws-uploads/*",
+                    "arn:aws:s3:::joellacerda-react-aws-uploads"
                   ]
                 },
                 {
@@ -225,7 +225,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/react-aws/prod/1689078194621-2023-07-11T12:23:14.621Z/react-aws.zip"
+          "S3Key": "serverless/react-aws/prod/1689162778293-2023-07-12T11:52:58.293Z/react-aws.zip"
         },
         "Handler": "dist/handler.createCat",
         "Runtime": "nodejs14.x",
@@ -234,7 +234,7 @@
         "Timeout": 6,
         "Environment": {
           "Variables": {
-            "BUCKET_NAME": "react-aws-uploads",
+            "BUCKET_NAME": "joellacerda-react-aws-uploads",
             "REGION": "us-east-1"
           }
         },
@@ -256,7 +256,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/react-aws/prod/1689078194621-2023-07-11T12:23:14.621Z/react-aws.zip"
+          "S3Key": "serverless/react-aws/prod/1689162778293-2023-07-12T11:52:58.293Z/react-aws.zip"
         },
         "Handler": "dist/handler.listCats",
         "Runtime": "nodejs14.x",
@@ -265,7 +265,7 @@
         "Timeout": 6,
         "Environment": {
           "Variables": {
-            "BUCKET_NAME": "react-aws-uploads",
+            "BUCKET_NAME": "joellacerda-react-aws-uploads",
             "REGION": "us-east-1"
           }
         },
@@ -287,7 +287,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/react-aws/prod/1689078194621-2023-07-11T12:23:14.621Z/react-aws.zip"
+          "S3Key": "serverless/react-aws/prod/1689162778293-2023-07-12T11:52:58.293Z/react-aws.zip"
         },
         "Handler": "dist/handler.showCat",
         "Runtime": "nodejs14.x",
@@ -296,7 +296,7 @@
         "Timeout": 6,
         "Environment": {
           "Variables": {
-            "BUCKET_NAME": "react-aws-uploads",
+            "BUCKET_NAME": "joellacerda-react-aws-uploads",
             "REGION": "us-east-1"
           }
         },
@@ -318,7 +318,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/react-aws/prod/1689078194621-2023-07-11T12:23:14.621Z/react-aws.zip"
+          "S3Key": "serverless/react-aws/prod/1689162778293-2023-07-12T11:52:58.293Z/react-aws.zip"
         },
         "Handler": "dist/handler.editCat",
         "Runtime": "nodejs14.x",
@@ -327,7 +327,7 @@
         "Timeout": 6,
         "Environment": {
           "Variables": {
-            "BUCKET_NAME": "react-aws-uploads",
+            "BUCKET_NAME": "joellacerda-react-aws-uploads",
             "REGION": "us-east-1"
           }
         },
@@ -349,7 +349,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/react-aws/prod/1689078194621-2023-07-11T12:23:14.621Z/react-aws.zip"
+          "S3Key": "serverless/react-aws/prod/1689162778293-2023-07-12T11:52:58.293Z/react-aws.zip"
         },
         "Handler": "dist/handler.deleteCat",
         "Runtime": "nodejs14.x",
@@ -358,7 +358,7 @@
         "Timeout": 6,
         "Environment": {
           "Variables": {
-            "BUCKET_NAME": "react-aws-uploads",
+            "BUCKET_NAME": "joellacerda-react-aws-uploads",
             "REGION": "us-east-1"
           }
         },
@@ -380,7 +380,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/react-aws/prod/1689078194621-2023-07-11T12:23:14.621Z/react-aws.zip"
+          "S3Key": "serverless/react-aws/prod/1689162778293-2023-07-12T11:52:58.293Z/react-aws.zip"
         },
         "Handler": "dist/handler.listBreeds",
         "Runtime": "nodejs14.x",
@@ -389,7 +389,7 @@
         "Timeout": 6,
         "Environment": {
           "Variables": {
-            "BUCKET_NAME": "react-aws-uploads",
+            "BUCKET_NAME": "joellacerda-react-aws-uploads",
             "REGION": "us-east-1"
           }
         },
@@ -411,7 +411,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/react-aws/prod/1689078194621-2023-07-11T12:23:14.621Z/react-aws.zip"
+          "S3Key": "serverless/react-aws/prod/1689162778293-2023-07-12T11:52:58.293Z/react-aws.zip"
         },
         "Handler": "dist/handler.listAges",
         "Runtime": "nodejs14.x",
@@ -420,7 +420,7 @@
         "Timeout": 6,
         "Environment": {
           "Variables": {
-            "BUCKET_NAME": "react-aws-uploads",
+            "BUCKET_NAME": "joellacerda-react-aws-uploads",
             "REGION": "us-east-1"
           }
         },
@@ -442,7 +442,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/react-aws/prod/1689078194621-2023-07-11T12:23:14.621Z/react-aws.zip"
+          "S3Key": "serverless/react-aws/prod/1689162778293-2023-07-12T11:52:58.293Z/react-aws.zip"
         },
         "Handler": "dist/handler.uploadPhotos",
         "Runtime": "nodejs14.x",
@@ -451,7 +451,7 @@
         "Timeout": 6,
         "Environment": {
           "Variables": {
-            "BUCKET_NAME": "react-aws-uploads",
+            "BUCKET_NAME": "joellacerda-react-aws-uploads",
             "REGION": "us-east-1"
           }
         },
@@ -466,84 +466,84 @@
         "UploadPhotosLogGroup"
       ]
     },
-    "CreateCatLambdaVersionG9kXbNpGO6X5DEpiJ9RN7tDeiMweCQNr0k1Gcayqo": {
+    "CreateCatLambdaVersionf6faTZvcPKwi6HdakkiKQGtNFtFzZesPwrNDsMyxo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateCatLambdaFunction"
         },
-        "CodeSha256": "KyjWoiQPtoe7VeIVwET/aZ3qZvyUHJVKLR5BvaMkaro="
+        "CodeSha256": "tYiVrF2Zp9HBGejb7NU3e7eIW/RZHGcpt0BNI9yz1ug="
       }
     },
-    "ListCatsLambdaVersionOFQM3WQsrYY8aXZXKhsSFYeLODhzB0mtjOb6uOLg4": {
+    "ListCatsLambdaVersionbiHFojSY8sWxqxpV6aQu3pM5skV2iqoSYisJKBhzc": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ListCatsLambdaFunction"
         },
-        "CodeSha256": "KyjWoiQPtoe7VeIVwET/aZ3qZvyUHJVKLR5BvaMkaro="
+        "CodeSha256": "tYiVrF2Zp9HBGejb7NU3e7eIW/RZHGcpt0BNI9yz1ug="
       }
     },
-    "ShowCatLambdaVersionpCooPEZUXeBQP01BfgFOZM1VIsFQdxh7Vfo7mOXO0": {
+    "ShowCatLambdaVersionTTfDuWA3HsAVhSBqT0pHtqOq5SnM8b1ifZakZnNqY": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ShowCatLambdaFunction"
         },
-        "CodeSha256": "KyjWoiQPtoe7VeIVwET/aZ3qZvyUHJVKLR5BvaMkaro="
+        "CodeSha256": "tYiVrF2Zp9HBGejb7NU3e7eIW/RZHGcpt0BNI9yz1ug="
       }
     },
-    "EditCatLambdaVersionOWqSIwTYpluF0V14RHPP6zRctAkLOmI24zJ2vvSI": {
+    "EditCatLambdaVersion9ylNzOjk50yKCpeXwXkPCp7EqBqqwIZYA7bq9h7IAf8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "EditCatLambdaFunction"
         },
-        "CodeSha256": "KyjWoiQPtoe7VeIVwET/aZ3qZvyUHJVKLR5BvaMkaro="
+        "CodeSha256": "tYiVrF2Zp9HBGejb7NU3e7eIW/RZHGcpt0BNI9yz1ug="
       }
     },
-    "DeleteCatLambdaVersionlg31Vi4ZDsdWPv5iv9MMMGmLSCaTJps2STS8mzKkg": {
+    "DeleteCatLambdaVersion6uyAJF3K7zevhT4dd3zW2TOihvJQZp6ulHPTOU440w": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteCatLambdaFunction"
         },
-        "CodeSha256": "KyjWoiQPtoe7VeIVwET/aZ3qZvyUHJVKLR5BvaMkaro="
+        "CodeSha256": "tYiVrF2Zp9HBGejb7NU3e7eIW/RZHGcpt0BNI9yz1ug="
       }
     },
-    "ListBreedsLambdaVersionixvbXSSS62F1c3PjGrsjDalhDPTs6pff1F9zZv1LyI": {
+    "ListBreedsLambdaVersionJdOizMGq3BuSZBYRp9wTZzZgXWJR3foAtabRGSm3lak": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ListBreedsLambdaFunction"
         },
-        "CodeSha256": "KyjWoiQPtoe7VeIVwET/aZ3qZvyUHJVKLR5BvaMkaro="
+        "CodeSha256": "tYiVrF2Zp9HBGejb7NU3e7eIW/RZHGcpt0BNI9yz1ug="
       }
     },
-    "ListAgesLambdaVersionvWoixGnjagtCbcr3FR9L76B2o1ZgdtGEkje2NNqaeQ": {
+    "ListAgesLambdaVersiondAT0ZnH1cXaY0SpgK35oQtETmXvaHxITSdaTQtpoJc4": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ListAgesLambdaFunction"
         },
-        "CodeSha256": "KyjWoiQPtoe7VeIVwET/aZ3qZvyUHJVKLR5BvaMkaro="
+        "CodeSha256": "tYiVrF2Zp9HBGejb7NU3e7eIW/RZHGcpt0BNI9yz1ug="
       }
     },
-    "UploadPhotosLambdaVersionBAVCcBznEYCHOY3CJ93yiiFkFPgIz3MTZ7rgouPj8": {
+    "UploadPhotosLambdaVersionUvOcVDqdHjKcDKvlO6xuVo7U8oQCWizz2V7EIZvsALs": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UploadPhotosLambdaFunction"
         },
-        "CodeSha256": "KyjWoiQPtoe7VeIVwET/aZ3qZvyUHJVKLR5BvaMkaro="
+        "CodeSha256": "tYiVrF2Zp9HBGejb7NU3e7eIW/RZHGcpt0BNI9yz1ug="
       }
     },
     "HttpApi": {
@@ -1212,7 +1212,7 @@
     "UploadsBucket": {
       "Type": "AWS::S3::Bucket",
       "Properties": {
-        "BucketName": "react-aws-uploads",
+        "BucketName": "joellacerda-react-aws-uploads",
         "PublicAccessBlockConfiguration": {
           "BlockPublicAcls": false,
           "BlockPublicPolicy": false,
@@ -1242,7 +1242,7 @@
         "UploadsBucket"
       ],
       "Properties": {
-        "Bucket": "react-aws-uploads",
+        "Bucket": "joellacerda-react-aws-uploads",
         "PolicyDocument": {
           "Version": "2012-10-17",
           "Statement": [
@@ -1251,7 +1251,7 @@
               "Effect": "Allow",
               "Principal": "*",
               "Action": "s3:GetObject",
-              "Resource": "arn:aws:s3:::react-aws-uploads/*"
+              "Resource": "arn:aws:s3:::joellacerda-react-aws-uploads/*"
             }
           ]
         }
@@ -1270,7 +1270,7 @@
     "CreateCatLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateCatLambdaVersionG9kXbNpGO6X5DEpiJ9RN7tDeiMweCQNr0k1Gcayqo"
+        "Ref": "CreateCatLambdaVersionf6faTZvcPKwi6HdakkiKQGtNFtFzZesPwrNDsMyxo"
       },
       "Export": {
         "Name": "sls-react-aws-prod-CreateCatLambdaFunctionQualifiedArn"
@@ -1279,7 +1279,7 @@
     "ListCatsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ListCatsLambdaVersionOFQM3WQsrYY8aXZXKhsSFYeLODhzB0mtjOb6uOLg4"
+        "Ref": "ListCatsLambdaVersionbiHFojSY8sWxqxpV6aQu3pM5skV2iqoSYisJKBhzc"
       },
       "Export": {
         "Name": "sls-react-aws-prod-ListCatsLambdaFunctionQualifiedArn"
@@ -1288,7 +1288,7 @@
     "ShowCatLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ShowCatLambdaVersionpCooPEZUXeBQP01BfgFOZM1VIsFQdxh7Vfo7mOXO0"
+        "Ref": "ShowCatLambdaVersionTTfDuWA3HsAVhSBqT0pHtqOq5SnM8b1ifZakZnNqY"
       },
       "Export": {
         "Name": "sls-react-aws-prod-ShowCatLambdaFunctionQualifiedArn"
@@ -1297,7 +1297,7 @@
     "EditCatLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "EditCatLambdaVersionOWqSIwTYpluF0V14RHPP6zRctAkLOmI24zJ2vvSI"
+        "Ref": "EditCatLambdaVersion9ylNzOjk50yKCpeXwXkPCp7EqBqqwIZYA7bq9h7IAf8"
       },
       "Export": {
         "Name": "sls-react-aws-prod-EditCatLambdaFunctionQualifiedArn"
@@ -1306,7 +1306,7 @@
     "DeleteCatLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteCatLambdaVersionlg31Vi4ZDsdWPv5iv9MMMGmLSCaTJps2STS8mzKkg"
+        "Ref": "DeleteCatLambdaVersion6uyAJF3K7zevhT4dd3zW2TOihvJQZp6ulHPTOU440w"
       },
       "Export": {
         "Name": "sls-react-aws-prod-DeleteCatLambdaFunctionQualifiedArn"
@@ -1315,7 +1315,7 @@
     "ListBreedsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ListBreedsLambdaVersionixvbXSSS62F1c3PjGrsjDalhDPTs6pff1F9zZv1LyI"
+        "Ref": "ListBreedsLambdaVersionJdOizMGq3BuSZBYRp9wTZzZgXWJR3foAtabRGSm3lak"
       },
       "Export": {
         "Name": "sls-react-aws-prod-ListBreedsLambdaFunctionQualifiedArn"
@@ -1324,7 +1324,7 @@
     "ListAgesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ListAgesLambdaVersionvWoixGnjagtCbcr3FR9L76B2o1ZgdtGEkje2NNqaeQ"
+        "Ref": "ListAgesLambdaVersiondAT0ZnH1cXaY0SpgK35oQtETmXvaHxITSdaTQtpoJc4"
       },
       "Export": {
         "Name": "sls-react-aws-prod-ListAgesLambdaFunctionQualifiedArn"
@@ -1333,7 +1333,7 @@
     "UploadPhotosLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UploadPhotosLambdaVersionBAVCcBznEYCHOY3CJ93yiiFkFPgIz3MTZ7rgouPj8"
+        "Ref": "UploadPhotosLambdaVersionUvOcVDqdHjKcDKvlO6xuVo7U8oQCWizz2V7EIZvsALs"
       },
       "Export": {
         "Name": "sls-react-aws-prod-UploadPhotosLambdaFunctionQualifiedArn"

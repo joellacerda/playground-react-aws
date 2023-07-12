@@ -11,7 +11,7 @@ custom:
   functionsBasePath: dist
   serverless-s3-cleaner:
     buckets:
-      - react-aws-uploads
+      - joellacerda-react-aws-uploads
   dotenv:
     exclude:
       - AWS_ACCESS_KEY_ID
@@ -32,7 +32,7 @@ provider:
     name: react-aws
     cors: true
   environment:
-    BUCKET_NAME: react-aws-uploads
+    BUCKET_NAME: joellacerda-react-aws-uploads
   iam:
     role:
       name: react-aws-role
@@ -46,8 +46,8 @@ provider:
             - "s3:GetBucketPolicy"
             - "s3:PutBucketPolicy"
           Resource:
-            - arn:aws:s3:::react-aws-uploads/*
-            - arn:aws:s3:::react-aws-uploads
+            - arn:aws:s3:::joellacerda-react-aws-uploads/*
+            - arn:aws:s3:::joellacerda-react-aws-uploads
         - Effect: "Allow"
           Action:
             - dynamodb:Scan
@@ -131,7 +131,7 @@ resources:
     UploadsBucket:
       Type: AWS::S3::Bucket
       Properties:
-        BucketName: react-aws-uploads
+        BucketName: joellacerda-react-aws-uploads
         PublicAccessBlockConfiguration:
           BlockPublicAcls: false
           BlockPublicPolicy: false
@@ -149,7 +149,7 @@ resources:
       Type: AWS::S3::BucketPolicy
       DependsOn: UploadsBucket
       Properties:
-        Bucket: react-aws-uploads
+        Bucket: joellacerda-react-aws-uploads
         PolicyDocument:
           Version: "2012-10-17"
           Statement:
@@ -157,4 +157,4 @@ resources:
               Effect: Allow
               Principal: "*"
               Action: s3:GetObject
-              Resource: "arn:aws:s3:::react-aws-uploads/*"
+              Resource: "arn:aws:s3:::joellacerda-react-aws-uploads/*"

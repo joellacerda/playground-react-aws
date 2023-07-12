@@ -19,9 +19,17 @@ export const HomeViewContainer = () => {
   const { data: breedsData, startFetch: startFetchBreeds } =
     useFetchApi("/breeds");
 
+  const { startFetch: createCat } = useFetchApi("/cats", "POST");
+
   const form = usePetEditForm({
     onSubmit: (values) => {
-      console.log("values", values);
+      createCat(
+        JSON.stringify({
+          name: values.name,
+          breed: values.breed.name,
+          age: values.age.name,
+        }),
+      );
     },
   });
 

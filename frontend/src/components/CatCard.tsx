@@ -1,7 +1,11 @@
 import HeartIcon from "@heroicons/react/24/solid/HeartIcon";
 import HeartIconOutline from "@heroicons/react/24/outline/HeartIcon";
 
-export const CatCard = () => {
+import { Cat } from "../types";
+
+type Props = Cat;
+
+export const CatCard = ({ name, age, breed }: Props) => {
   return (
     <div className="group overflow-hidden rounded-lg border border-gray-200 p-4 transition-all">
       <div
@@ -16,11 +20,9 @@ export const CatCard = () => {
         </button>
       </div>
 
-      <h2 className="text-xl">
-        Bartolomeu<span className="text-gray-500">(Bartô)</span>
-      </h2>
-      <p className="text-lg text-gray-600">Siamese</p>
-      <p className="text-sm font-semibold text-gray-600">4 years old</p>
+      <h2 className="text-xl">{name}</h2>
+      <p className="text-lg text-gray-600">{breed}</p>
+      <p className="text-sm font-semibold text-gray-600">{age}</p>
       <p className="mt-4 text-gray-600">
         Bartô é um gato vagabundo que não dispensa uma ração premium e umas 20
         horas de sono
